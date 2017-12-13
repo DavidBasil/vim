@@ -14,7 +14,7 @@ nno : ;
 nno ; :
 vno : ;
 vno ; :
-" autocmd BufNewFile,BufRead *.ejs set ft=htmldjango
+autocmd BufNewFile,BufRead *.ejs set ft=html
 autocmd BufNewFile,BufRead *.pug set ft=html
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 set autoread
@@ -23,6 +23,9 @@ map <Enter> o<ESC>
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+set smartindent
+" set expandtab
+" set tabstop=2 shiftwidth=2 expandtab
 
 let $FZF_DEFAULT_COMMAND = 'ag --ignore node_modules -g ""'
 
@@ -33,14 +36,14 @@ let g:qs_first_occurrence_highlight_color = 15
 let g:qs_second_occurrence_highlight_color = 15 
 
 nnoremap gm :call cursor(0, len(getline('.'))/2)<cr>
-"au BufNewFile,BufRead,BufReadPost *.html set ft=htmldjango
+" au BufNewFile,BufRead,BufReadPost *.html set ft=htmldjango
+au BufNewFile,BufRead,BufReadPost *.hbs set ft=html
 
 let g:lightline = {
       \ 'colorscheme': 'powerline',
       \ }
 
 let php_htmlInStrings = 1
-
 
 " Misc
 set ignorecase
@@ -120,6 +123,7 @@ let g:NERDTreeQuitOnOpen = 1
 "    normal! $
 "  endif
 "endfunction
+
 let g:sneak#s_next = 1
 
 " Plugins
@@ -143,6 +147,7 @@ Plug 'digitaltoad/vim-pug'
 Plug 'tmhedberg/matchit'
 Plug 'romainl/vim-cool'
 Plug 'justinmk/vim-sneak'
+Plug 'joukevandermaas/vim-ember-hbs'
 "Plug 'tpope/vim-surround'
 "Plug 'unblevable/quick-scope'
 "Plug 'rking/ag.vim'
