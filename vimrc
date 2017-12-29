@@ -23,12 +23,6 @@ map <Enter> o<ESC>
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" Navigate 4x faster when holding down Ctrl
-nmap <c-j> 4j
-nmap <c-k> 4k
-nmap <c-h> 4h
-nmap <c-l> 4l
-
 set smartindent
 " set expandtab
 " set tabstop=2 shiftwidth=2 expandtab
