@@ -1,3 +1,4 @@
+" Written by David Basil
 " key mappings
 " inoremap jj <esc>
 set hlsearch
@@ -23,17 +24,6 @@ map <Enter> o<ESC>
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" replace e and b
-nnoremap b B
-nnoremap e E
-
-" move to beginning/end of line
-nnoremap B ^
-nnoremap E $
-
-" $/^ doesn't do anything
-nnoremap $ <nop>
-nnoremap ^ <nop>
 
 set smartindent
 " set expandtab
@@ -158,6 +148,10 @@ Plug 'digitaltoad/vim-pug'
 "Plug 'gregsexton/MatchTag'
 Plug 'tmhedberg/matchit'
 Plug 'romainl/vim-cool'
+" Plug 'jlanzarotta/bufexplorer'
+Plug 'ap/vim-buftabline'
+" Plug 'jeetsukumaran/vim-buffergator'
+" Plug 'fholgado/minibufexpl.vim'
 " Plug 'justinmk/vim-sneak'
 " Plug 'joukevandermaas/vim-ember-hbs'
 " Plug 'tpope/vim-surround'
