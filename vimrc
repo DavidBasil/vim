@@ -1,12 +1,15 @@
 " Written by David Basil
 " key mappings
 " inoremap jj <esc>
+set shell=bash\ -i
 set hlsearch
 noremap <silent> <C-a> :NERDTreeToggle<CR>
 noremap <silent> <C-f> :FZF<CR>
 noremap tt <Esc>:!
 :noremap j gj
 :noremap k gk
+:nnoremap <C-n> :bnext<CR>
+:nnoremap <C-p> :bprevious<CR>
 " map <S-tab> <C-W><C-W>
 set timeoutlen=1000 ttimeoutlen=0 
 set incsearch
@@ -24,6 +27,7 @@ map <Enter> o<ESC>
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" set t_Co=256
 
 set smartindent
 " set expandtab
@@ -150,6 +154,10 @@ Plug 'tmhedberg/matchit'
 Plug 'romainl/vim-cool'
 " Plug 'jlanzarotta/bufexplorer'
 Plug 'ap/vim-buftabline'
+Plug 'kristiandupont/shades-of-teal'
+Plug 'leafgarland/typescript-vim'
+Plug 'kchmck/vim-coffee-script'
+" Plug 'nightsense/vimspectr'
 " Plug 'jeetsukumaran/vim-buffergator'
 " Plug 'fholgado/minibufexpl.vim'
 " Plug 'justinmk/vim-sneak'
