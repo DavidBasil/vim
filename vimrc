@@ -1,7 +1,8 @@
 " Written by David Basil
 " key mappings
 " inoremap jj <esc>
-set shell=bash\ -i
+" set shell=bash\ -lic
+" set shellcmdflag=-lic
 set hlsearch
 noremap <silent> <C-a> :NERDTreeToggle<CR>
 noremap <silent> <C-f> :FZF<CR>
@@ -157,6 +158,7 @@ Plug 'ap/vim-buftabline'
 Plug 'kristiandupont/shades-of-teal'
 Plug 'leafgarland/typescript-vim'
 Plug 'kchmck/vim-coffee-script'
+Plug 'slim-template/vim-slim'
 " Plug 'nightsense/vimspectr'
 " Plug 'jeetsukumaran/vim-buffergator'
 " Plug 'fholgado/minibufexpl.vim'
