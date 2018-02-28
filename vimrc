@@ -159,6 +159,7 @@ Plug 'kristiandupont/shades-of-teal'
 Plug 'leafgarland/typescript-vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'slim-template/vim-slim'
+Plug 'Yggdroot/indentLine', { 'for': 'slim' }
 " Plug 'tpope/vim-repeat'
 " Plug 'lfilho/cosco.vim'
 " Plug 'nightsense/vimspectr'
